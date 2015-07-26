@@ -1,0 +1,15 @@
+# Sample localization file for English. Add more files in this directory for other locales.
+# See https://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
+
+pt:
+  spree:
+    sale_price: "Preço Promoção"
+    original_price: "Preço Original (Moeda Standard)"
+    product_sale_prices: "Preços de Promoção"
+    add_product_sale_prices: "Adicionar Preço de Promoção"
+    sale_price_amount: 'Quantia'
+    sale_price_active: 'Activo'
+    sale_price_currency: "Moeda"
+    sale_price_start_at: "Data de Início do Desconto"
+    sale_price_end_at: "Data Fim do Desconto"
+    sale_price_enabled: "Seleccionado"
