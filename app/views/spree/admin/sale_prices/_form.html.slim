@@ -1,0 +1,21 @@
+.row data-hook="admin_sale_prices_form"
+  .col-md-3 data-hook="admin_sale_prices_form"
+    = label_tag Spree.t('sale_prices.original_price')
+    = text_field_tag '', @product.original_price.to_f, disabled: true, class: 'form-control'
+    br
+    = f.field_container :value, class: ['form-group'] 
+      = f.label :value, Spree.t('sale_prices.amount')
+      = f.text_field :value, class: 'form-control'
+    = f.field_container :currency, class: ['form-group'] 
+      = f.label :currency, Spree.t('sale_prices.currency')
+      = f.select :currency, options_for_select(supported_currencies_for_sale_price),{}, {class: 'form-control'}
+    = f.field_container :start_at, class: ['form-group'] 
+      = f.label :start_at, Spree.t('sale_prices.start_at')
+      /- start_date = l(Time.zone.now, :format => Spree.t('sale_prices.datetimepicker.format'))
+      /= f.text_field :start_at, :value => start_date, class: "form-control"
+      = f.text_field :start_at, class: "form-control"
+    = f.field_container :end_at, class: ['form-group']
+      = f.label :end_at, Spree.t('sale_prices.end_at')
+      /- end_date = l(Time.zone.now + 1.day, :format => Spree.t('sale_prices.datetimepicker.format'))
+      /= f.text_field :end_at, :value => end_date, class: "form-control"
+      = f.text_field :end_at, class: "form-control"

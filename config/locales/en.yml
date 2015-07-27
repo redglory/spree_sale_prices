@@ -2,13 +2,31 @@
 # See https://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
 
 en:
-  sale_price: "Sale Price"
-  original_price: "Original Price (Standard Currency)"
-  product_sale_prices: "Product Sale Prices"
-  add_product_sale_prices: "Add Product Sale Price"
-  sale_price_amount: 'Amount'
-  sale_price_active: 'Active'
-  sale_price_currency: "Currency"
-  sale_price_start_at: "Sale Start Date"
-  sale_price_end_at: "Sale End Date"
-  sale_price_enabled: "Enabled"
+  spree:
+    sale_prices:
+      sale_price: "Sale Price"
+      original_price: "Original Price (Standard Currency)"
+      product_sale_prices: "Product Sale Prices"
+      add_product_sale_prices: "Add Product Sale Price"
+      amount: 'Amount'
+      active: 'Active'
+      currency: "Currency"
+      start_at: "Sale Start Date"
+      end_at: "Sale End Date"
+      enabled: "Enabled"
+      disabled: "Disabled"
+      datetimepicker:
+        format: ! '%Y/%m/%d %H:%M:%S %z'
+        js_format: 'HH:mm:ss z'
+        js_date_format: 'yy/mm/dd'
+        time_only_title: 'Time only'
+        time_text: 'Time'
+        hour_text: 'Hour'
+        minute_text: 'Minute'
+        second_text: 'Second'
+        current_text: 'Current'
+        close_text: 'Close'
+
+
+
+

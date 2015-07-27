@@ -3,13 +3,29 @@
 
 pt:
   spree:
-    sale_price: "Preço Promoção"
-    original_price: "Preço Original (Moeda Standard)"
-    product_sale_prices: "Preços de Promoção"
-    add_product_sale_prices: "Adicionar Preço de Promoção"
-    sale_price_amount: 'Quantia'
-    sale_price_active: 'Activo'
-    sale_price_currency: "Moeda"
-    sale_price_start_at: "Data de Início do Desconto"
-    sale_price_end_at: "Data Fim do Desconto"
-    sale_price_enabled: "Seleccionado"
+    sale_prices:
+      sale_price: "Preço Promoção"
+      original_price: "Preço Original (Moeda Standard)"
+      product_sale_prices: "Preços de Promoção"
+      add_product_sale_prices: "Adicionar Preço de Promoção"
+      amount: 'Preço Desconto'
+      active: 'Activo'
+      currency: "Moeda"
+      start_at: "Data de Início do Desconto"
+      end_at: "Data Fim do Desconto"
+      enabled: "Seleccionado"
+      disabled: "Não Seleccionado"
+      yes: "Sim"
+      no: "Não"
+      datetimepicker:
+        format: ! '%d/%m/%Y %H:%M:%S'
+        js_format: 'HH:mm:ss'
+        js_date_format: 'dd/mm/yy'
+        time_only_title: 'Tempo apenas'
+        time_text: 'Tempo'
+        hour_text: 'Hora'
+        minute_text: 'Minuto'
+        second_text: 'Segundo'
+        current_text: 'Actual'
+        close_text: 'Fechar'
+

@@ -1,35 +1,20 @@
 = render 'spree/admin/shared/product_tabs', :current => "Product Sale Prices"
 = render 'spree/admin/shared/error_messages', :target => @product
 
-- content_for :page_actions
-  = button_link_to Spree.t(:add_product_sale_prices), new_object_url, { :class => "btn-success", :icon => 'add', :id => 'admin_new_sale_price' }
+/- content_for :page_actions
+/  = button_link_to Spree.t('sale_prices.add_product_sale_prices'), new_admin_product_sale_price_url, { :class => "btn-success", :icon => 'add', :id => 'admin_new_sale_price' }
 
 h3
-  = Spree.t(:product_sale_prices)
+  = Spree.t('sale_prices.product_sale_prices')
 
 #add-line-item
   = form_for [:admin, @product, Spree::SalePrice.new], remote: true do |f|
-    .row
-      .columns.three
-        = label_tag Spree.t('original_price')
-        = text_field_tag '', @product.original_price.to_f, disabled: true
-    .row
-      .columns.three
-        = f.label :value, Spree.t('sale_price_amount')
-        = f.text_field :value
-      .columns.three
-        = f.label :currency, Spree.t('sale_price_currency')
-        = f.select :currency, options_for_select(supported_currencies_for_sale_price)
-    .row
-      .columns.three
-        = f.label :start_at, Spree.t('sale_price_start_at')
-        = f.text_field :start_at, class: "datepicker"
-      .columns.three
-        = f.label :end_at, Spree.t('sale_price_end_at')
-        = f.text_field :end_at, class: "datepicker"
-      .columns.three
-        = f.label :submit, style: 'visibility: hidden;'
-        = f.submit Spree.t('add'), class: "btn-success"
+    .fieldset
+      = render :partial => 'form', :locals => { :f => f }
+      .row
+        .col-md-2
+          .form-actions data-hook="buttons"
+            = f.submit Spree.t('add'), class: "btn-success form-control"
 
 #product-sale-prices-table
   = render partial: "table", locals: { product: @product }
