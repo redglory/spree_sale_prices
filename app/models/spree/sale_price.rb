@@ -23,7 +23,7 @@ module Spree
     end
 
     def calculated_price
-      calculator.compute self
+      calculator.compute self if calculator
     end
 
     def enable
