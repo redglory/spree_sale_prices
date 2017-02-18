@@ -1,6 +1,6 @@
 module Spree
   module Admin
-    class SalePricesController < BaseController
+    class SalePricesController < Spree::Admin::ResourceController
 
       before_filter :load_product
 

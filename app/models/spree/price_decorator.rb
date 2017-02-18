@@ -1,6 +1,6 @@
 Spree::Price.class_eval do
   has_many :sale_prices
-  
+
   def put_on_sale(value, params = {})
     new_sale(value, params).save
   end

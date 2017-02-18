@@ -1,0 +1,31 @@
+# Sample localization file for English. Add more files in this directory for other locales.
+# See https://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
+
+pt:
+  spree:
+    sale_prices:
+      sale_price: "Preço Promoção"
+      original_price: "Preço Original (Moeda Standard)"
+      product_sale_prices: "Preços de Promoção"
+      add_product_sale_prices: "Adicionar Preço de Promoção"
+      amount: 'Preço Desconto'
+      active: 'Activo'
+      currency: "Moeda"
+      start_at: "Data de Início do Desconto"
+      end_at: "Data Fim do Desconto"
+      enabled: "Seleccionado"
+      disabled: "Não Seleccionado"
+      yes: "Sim"
+      no: "Não"
+      datetimepicker:
+        format: ! '%d/%m/%Y %H:%M:%S'
+        js_format: 'HH:mm:ss'
+        js_date_format: 'dd/mm/yy'
+        time_only_title: 'Tempo apenas'
+        time_text: 'Tempo'
+        hour_text: 'Hora'
+        minute_text: 'Minuto'
+        second_text: 'Segundo'
+        current_text: 'Actual'
+        close_text: 'Fechar'
+
